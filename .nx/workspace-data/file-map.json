@@ -1,0 +1,459 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.7.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        },
+        "build": {
+          "targetName": "build",
+          "configName": "tsconfig.lib.json",
+          "buildDepsName": "build-deps",
+          "watchDepsName": "watch-deps"
+        }
+      }
+    },
+    {
+      "name": "@nx/react-native/plugin",
+      "options": {
+        "startTargetName": "start",
+        "upgradeTargetName": "update",
+        "bundleTargetName": "bundle",
+        "podInstallTargetName": "pod-install",
+        "runIosTargetName": "run-ios",
+        "runAndroidTargetName": "run-android",
+        "buildIosTargetName": "build-ios",
+        "buildAndroidTargetName": "build-android",
+        "syncDepsTargetName": "sync-deps"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "15682881651935979466"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14737294919729752538"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "17085498363870782104"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6820402234827505055"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "12879020780196452735"
+      },
+      {
+        "file": "README.md",
+        "hash": "12724262137370157983"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "1811848233931877075"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "9882362695153092473"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "7473220183190921152"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5631675401268953079"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2697769212304977944"
+      },
+      {
+        "file": "package.json",
+        "hash": "3503004488322248048"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "8151884466140505987"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "9586168122508202299"
+      }
+    ],
+    "projectFileMap": {
+      "online-shop-e2e": [
+        {
+          "file": "apps/online-shop-e2e/eslint.config.mjs",
+          "hash": "16243282764819368173",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "apps/online-shop-e2e/package.json",
+          "hash": "13678302550893245209"
+        },
+        {
+          "file": "apps/online-shop-e2e/playwright.config.ts",
+          "hash": "9175419946409851337",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/online-shop-e2e/src/example.spec.ts",
+          "hash": "1909365745453809229",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/online-shop-e2e/tsconfig.json",
+          "hash": "7305593062393138781"
+        }
+      ],
+      "online-shop": [
+        {
+          "file": "apps/online-shop/.babelrc.js",
+          "hash": "2381384059170633813"
+        },
+        {
+          "file": "apps/online-shop/Gemfile",
+          "hash": "6166261899605496885"
+        },
+        {
+          "file": "apps/online-shop/android/app/build.gradle",
+          "hash": "14593470275659835639"
+        },
+        {
+          "file": "apps/online-shop/android/app/debug.keystore",
+          "hash": "5037686243849261810"
+        },
+        {
+          "file": "apps/online-shop/android/app/proguard-rules.pro",
+          "hash": "4563710879397592286"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/androidTest/java/com/onlineshop/DetoxTest.java",
+          "hash": "8194082114344790722"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/debug/AndroidManifest.xml",
+          "hash": "6313368760746369932"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/AndroidManifest.xml",
+          "hash": "14084996544558395706"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/java/com/onlineshop/MainActivity.kt",
+          "hash": "9252827546814415459"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/java/com/onlineshop/MainApplication.kt",
+          "hash": "17753825217911611707"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+          "hash": "15255868024203671670"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+          "hash": "10788509195642110029"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+          "hash": "14348562046770238248"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+          "hash": "328692529308011025"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+          "hash": "11802043336826859502"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+          "hash": "13006206334539413900"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+          "hash": "1812825738055967771"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+          "hash": "6104457872863500683"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+          "hash": "2478168592410677995"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "hash": "12283149652938275290"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+          "hash": "7126668675123994836"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/values/strings.xml",
+          "hash": "3951014284137323091"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/values/styles.xml",
+          "hash": "7258218790259398554"
+        },
+        {
+          "file": "apps/online-shop/android/app/src/main/res/xml/network_security_config.xml",
+          "hash": "8350522569357723948"
+        },
+        {
+          "file": "apps/online-shop/android/build.gradle",
+          "hash": "1013944487658934863"
+        },
+        {
+          "file": "apps/online-shop/android/gradle.properties",
+          "hash": "7312583492790757823"
+        },
+        {
+          "file": "apps/online-shop/android/gradle/wrapper/gradle-wrapper.jar",
+          "hash": "11064621541907778082"
+        },
+        {
+          "file": "apps/online-shop/android/gradle/wrapper/gradle-wrapper.properties",
+          "hash": "17285723542988929831"
+        },
+        {
+          "file": "apps/online-shop/android/gradlew",
+          "hash": "7553713931933475587"
+        },
+        {
+          "file": "apps/online-shop/android/gradlew.bat",
+          "hash": "3049992198610835351"
+        },
+        {
+          "file": "apps/online-shop/android/settings.gradle",
+          "hash": "18214968559039148663"
+        },
+        {
+          "file": "apps/online-shop/app.json",
+          "hash": "14720030034722935045"
+        },
+        {
+          "file": "apps/online-shop/eslint.config.mjs",
+          "hash": "14117424885634548243",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/online-shop/index.html",
+          "hash": "12898930450828847687"
+        },
+        {
+          "file": "apps/online-shop/ios/.xcode.env",
+          "hash": "10061389832904296573"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop.xcodeproj/project.pbxproj",
+          "hash": "16642377668854636914"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop.xcodeproj/xcshareddata/xcschemes/OnlineShop.xcscheme",
+          "hash": "3829577844179011016"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop.xcworkspace/contents.xcworkspacedata",
+          "hash": "7815106460523800647"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop/AppDelegate.h",
+          "hash": "10870806535617087695"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop/AppDelegate.mm",
+          "hash": "16714336418084279542"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop/Images.xcassets/AppIcon.appiconset/Contents.json",
+          "hash": "10461211498984866123"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop/Images.xcassets/Contents.json",
+          "hash": "9861330382833822729"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop/Info.plist",
+          "hash": "16329842987380674502"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop/LaunchScreen.storyboard",
+          "hash": "10573399779791867988"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop/PrivacyInfo.xcprivacy",
+          "hash": "17513289444784180010"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShop/main.m",
+          "hash": "17227559343016262068"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShopTests/Info.plist",
+          "hash": "4957517430792437190"
+        },
+        {
+          "file": "apps/online-shop/ios/OnlineShopTests/OnlineShopTests.m",
+          "hash": "749728568122431177"
+        },
+        {
+          "file": "apps/online-shop/ios/Podfile",
+          "hash": "2920256944743149232"
+        },
+        {
+          "file": "apps/online-shop/jest.config.ts",
+          "hash": "14928204650405389323",
+          "deps": [
+            [
+              "npm:react-native",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/online-shop/metro.config.js",
+          "hash": "12223112038759420764",
+          "deps": [
+            "npm:@nx/react-native",
+            "npm:@react-native/metro-config",
+            "npm:react-native-svg-transformer"
+          ]
+        },
+        {
+          "file": "apps/online-shop/package.json",
+          "hash": "11706402214217655764"
+        },
+        {
+          "file": "apps/online-shop/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/online-shop/src/app/App.spec.tsx",
+          "hash": "16717012766088434416",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react-native"
+          ]
+        },
+        {
+          "file": "apps/online-shop/src/app/App.tsx",
+          "hash": "3587225287450887222",
+          "deps": [
+            "npm:react",
+            "npm:react-native",
+            "npm:react-native-svg"
+          ]
+        },
+        {
+          "file": "apps/online-shop/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/online-shop/src/main-web.tsx",
+          "hash": "7422643494551391998",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/online-shop/src/main.tsx",
+          "hash": "2823425405427081192",
+          "deps": [
+            "npm:react-native"
+          ]
+        },
+        {
+          "file": "apps/online-shop/src/test-setup.ts",
+          "hash": "10319682889150307590",
+          "deps": [
+            "npm:@testing-library/jest-native"
+          ]
+        },
+        {
+          "file": "apps/online-shop/tsconfig.app.json",
+          "hash": "8602895654366004294"
+        },
+        {
+          "file": "apps/online-shop/tsconfig.json",
+          "hash": "17844214084672627494"
+        },
+        {
+          "file": "apps/online-shop/tsconfig.spec.json",
+          "hash": "11141683846893551026"
+        },
+        {
+          "file": "apps/online-shop/vite.config.ts",
+          "hash": "17204029980469022046",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite",
+            "npm:esbuild"
+          ]
+        }
+      ]
+    }
+  }
+}
