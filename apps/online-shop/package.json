@@ -1,0 +1,8 @@
+{
+  "name": "@org/online-shop",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "online-shop"
+  }
+}
